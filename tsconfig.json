@@ -1,6 +1,12 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "strict": true
+    "strict": true,
+    "jsx": "react",  // hoặc "react-jsx" nếu bạn sử dụng React 17+
+    "target": "es5",  // hoặc một phiên bản ECMAScript phù hợp với yêu cầu của bạn
+    "module": "esnext",  // hoặc "commonjs", tùy thuộc vào dự án của bạn
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
   }
 }
